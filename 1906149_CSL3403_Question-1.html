@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using Flexbox</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			background: linear-gradient(45deg,#49a09d,#5f2c82);
+			background-size: 100%;
+			background-position: fixed;
+			font-family: sans-serif;
+			font-weight: 100;
+		}
+		#heading1{
+			color: white;
+			text-align: center;
+			background-image: linear-gradient(to right, rgba(255,0,0,0),rgba(255,0,0,0.8));
+		}
+		#heading2{
+			color: white;
+			text-align: center;
+			animation-duration: 4s;
+			animation-name: slidein;
+			animation-iteration-count: infinite;
+		}
+		@keyframes slidein{
+			from {
+               margin-left: 100%;
+               width: 300%; 
+            }
+            to {
+               margin-left: 0%;
+               width: 100%;
+            }
+		}
+		.info{
+			color: white;
+			text-align: center;
+		}
+		.container{
+			display: flex;	
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.container img{
+			padding: 10px;
+			border: 1.5px solid white;
+			box-shadow: 2px 4px #E0FFFF;
+			transition: all 2s;
+		}
+		.container img:hover{
+			-webkit-transform : skew(20deg) scale(0.7); 
+            -ms-transform     : skew(20deg) scale(0.6); 
+            transform         : skew(20deg) scale(0.6); 
+            left : -20px;
+            position: relative;
+		}
+	</style>
+</head>
+<body>
+	    <h1 id="heading1">Internal Exercise: Question-1</h1>
+	    <div class="w3-animate-zoom">
+	    	<h1 id="heading2">Using Flexbox</h1>
+	    </div>
+        
+        <h2 align="center" style="color: white;"><u><i>Images</i></u></h2>
+        <div class="container" align="center">
+            <br><br>
+        
+        <img src="puppy1.jpg" width="250" height="300" alt="puppy1">
+        <img src="puppy2.jpg" width="250" height="300" alt="puppy2">
+        <img src="puppy3.jpg" width="250" height="300" alt="puppy3">
+        <img src="puppy4.jpg" width="250" height="300" alt="puppy4">
+        <img src="puppy5.jpg" width="250" height="300" alt="puppy5">
+        </div>
+        <h2 class="info">NAME: Chilukuri Vara Sai Lakshmi Supraja</h2>
+        <h2 class="info">ROLL NUMBER: 1906149</h2>
+    
+    </body>
+</html>
